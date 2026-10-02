@@ -13,6 +13,9 @@ df = pd.DataFrame(data)
 
 new_row={"Name":"gf1","age":20,"city":"NYC"}
 df.loc[len(df.index)]=new_row
+
+new_row={"Name":"gf2","Age":20,"City":"NYC"}
+df.loc[len(df.index)]=new_row
 # Save to CSV file
 
 os.makedirs('data',exist_ok=True)
